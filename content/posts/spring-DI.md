@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-title: Spring DI와 자동 DI
+title: DI와 자동 DI
 status: Published
 date: '2020-04-07'
 featuredImage: >-

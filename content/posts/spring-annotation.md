@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-title: Spring Annotation
+title: Annotation
 status: Published
 date: '2020-04-07'
 featuredImage: >-
