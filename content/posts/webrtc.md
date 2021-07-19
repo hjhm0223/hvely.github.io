@@ -4,6 +4,7 @@ title: WebRTC
 status: Published
 date: '2020-04-01'
 featuredImage: >-
+  https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/WebRTC_Logo.svg/1280px-WebRTC_Logo.svg.png
 excerpt: >-
   
 categories:
@@ -13,7 +14,7 @@ meta:
   title: test meta title
 ---
 
-
+![webrtc](https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/WebRTC_Logo.svg/1280px-WebRTC_Logo.svg.png)
 
 ## WebRTC (Web Real-Time Communications)란?
 

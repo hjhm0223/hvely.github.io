@@ -4,7 +4,7 @@ title: JPA Query
 status: Published
 date: '2020-04-01'
 featuredImage: >-
-  
+  https://cdn.inflearn.com/public/courses/324109/course_cover/161476f8-f0b7-4b04-b293-ce648c2ea445/kyh_jsp.png
 excerpt: >-
   
 categories:
@@ -13,6 +13,8 @@ meta:
   description: test meta description
   title: test meta title
 ---
+
+![jpa](https://cdn.inflearn.com/public/courses/324109/course_cover/161476f8-f0b7-4b04-b293-ce648c2ea445/kyh_jsp.png)
 
 ## JPA Query
 

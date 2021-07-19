@@ -4,7 +4,7 @@ title: OOP
 status: Published
 date: '2020-04-01'
 featuredImage: >-
-  
+  https://media.vlpt.us/images/gyu716625/post/bf9c30e2-6402-4415-8aeb-31d84f5b059b/image.png
 excerpt: >-
   
 categories:
@@ -14,7 +14,10 @@ meta:
   title: test meta title
 ---
 
-## 객체 지향 프로그래밍(OOP)이란?
+![oop](https://media.vlpt.us/images/gyu716625/post/bf9c30e2-6402-4415-8aeb-31d84f5b059b/image.png)
+
+
+## 객체 지향 프로그래밍(OOP, Object Oriented Programming)이란?
 
 **객체 지향 프로그래밍**은 객체의 관점에서 프로그래밍 하는 것이다. 
 
