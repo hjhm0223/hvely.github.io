@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-title: Concurrency
+title: 동시성 처리
 status: Published
 date: '2020-04-01'
 featuredImage: >-
