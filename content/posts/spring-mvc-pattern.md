@@ -32,19 +32,19 @@ MVC는 Design Pattern 중 하나이다.
 ![mvc pattern image](https://www.researchgate.net/profile/Jan-Wielemaker/publication/254852917/figure/fig3/AS:669454635630607@1536621831811/Model-View-Controller-MVC-design-pattern-Controllers-modify-UI-aspects-of-a-view.png)
 
 
-#### 1. **Model**
+#### 1. Model
 
 - application의 `데이터`를 나타낸다.
 - database application 단에서 맨 처음 정의되는 여러 변수, 상수 등 혹은 이러한 데이터들을 다루기 위한 여러 쿼리를 비롯한 기능들도 포함될 수 있다.
 - `MVC Model 규칙`: 사용자는 최종적으로 오직 Model을 통해서만 데이터에 접근한다. 나머지 View, Controller단에서 내부 속성값을 가지면 안된다. 따라서 다른 컴포넌트가 모델의 데이터를 변경하고 싶을 때 다른 컴포넌트 간의 통신 수단을 구현해야 한다.
 
-#### 2. **View**
+#### 2. View
 
 - 사용자에게 application의 `UI` 등을 통해 화면에 보여주기 위한 역할을 맡고 있다.
 - web의 경우 html, css, js 등이 될 수 있다.
 - View는 사용자에게 화면을 보여주는 역할 외에 타 역할에 절대 관여하지 않는다.
 
-#### 3. **Controller**
+#### 3. Controller
 
 - Model과 View의 중간 다리 역할을 수행한다.
 - 사용자가 View에서 제공된 화면에서 입력을 비롯한 "이벤트"에 대하여 기능을 수행할 때 그것을 Controller가 받아서 수행한다.
@@ -83,19 +83,19 @@ Spring MVC의 설정 방법만 익혀두면 `웹 개발`에 필요한 다양한 
 - webapp은 html, css, js, jsp 등 `web application`을 구현하는데 필요한 코드가 위치
 - WEB-INF에는 `web.xml` 파일이 위치 (servlet spec에 따르면 WEB-INF 폴더 하위에 lib와 classes 폴더와 jar, compile된 class 파일이 위치해야 하지만 maven이나 gradle의 경우 의존을 통해 필요한 jar 파일을 지정하므로 compile된 결과는 target 폴더나 build 폴더에 위치한다.)
 
-```
-src/main/java
-src/main/webapp
-src/main/webapp/WEB-INF
-src/main/webapp/WEB_INF/view
-```
+  ```
+  src/main/java
+  src/main/webapp
+  src/main/webapp/WEB-INF
+  src/main/webapp/WEB_INF/view
+  ```
 
 - war(web application archive)의 기본값은 jar로서 servlet/JSP를 이용한 web application을 개발할 경우 사용된다.
 
-```java
-// pom.xml
-<packaging>war</packaging>
-```
+  ```java
+  // pom.xml
+  <packaging>war</packaging>
+  ```
 
 - tomcat 설치 및 실행 환경 등록
 
@@ -106,41 +106,41 @@ src/main/webapp/WEB_INF/view
 
 1. Spring의 `DispatcherServlet` 설정
 
-```java
+  ```java
 
-// MvcConfig.java
+  // MvcConfig.java
 
-...
+  ...
 
-@Configuration
+  @Configuration
 
-@EnableWebMvc
+  @EnableWebMvc
 
-public class MvcConfig implements WebMvcConfigurer {
-
-
-@Override
-
-public void configureDefaulServletHandling(
-
-DefaultServletHandlerConfigurer configurer) {
-
-configurer.enable();
-
-}
+  public class MvcConfig implements WebMvcConfigurer {
 
 
-@Override
+  @Override
 
-public void configureViewResolvers(ViewResolverRegistry registry) {
+  public void configureDefaulServletHandling(
 
-registry.jsp("/WEB_INF/view/", ".jsp");
+  DefaultServletHandlerConfigurer configurer) {
 
-}
+  configurer.enable();
 
-}
+  }
 
-```
+
+  @Override
+
+  public void configureViewResolvers(ViewResolverRegistry registry) {
+
+  registry.jsp("/WEB_INF/view/", ".jsp");
+
+  }
+
+  }
+
+  ```
 
 - @EnableWebMvc: Spring MVC 설정을 `활성화`한다. Spring MVC를 사용하는데 필요한 다양한 설정을 생성한다.
 
@@ -150,12 +150,12 @@ registry.jsp("/WEB_INF/view/", ".jsp");
 
 
 
-@EnableWebMvc
+  @EnableWebMvc
 
 - 내부적으로 다양한 빈 설정을 추가해준다.
 
 
-configureDefaultServletHandlig(), configureViewResolvers()
+  configureDefaultServletHandlig(), configureViewResolvers()
 
 - WebMvcConfigurer interface에 정의된 method로 각각 default servlet과 ViewResolver과 관련된 설정을 조정한다.
 
@@ -188,16 +188,4 @@ org.springframework.web.servlet.DispatcherServlet
 <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
 
 </init-param>
-
-
 ```
-
-
-
-
-
-
-
-
-
-<reference>

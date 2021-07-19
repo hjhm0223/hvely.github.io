@@ -234,7 +234,7 @@ security:
 
 ### 1. 의존성 추가
 
-```config
+```conf
 <!-- maven -->
 <dependency>
 <groupId>io.springfox</groupId>
@@ -248,7 +248,7 @@ security:
 </dependency>
 ```
 
-```config
+```conf
 <!-- gradle -->
 dependencies {
 implementation 'org.springframework.boot:spring-boot-starter-web'

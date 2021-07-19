@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-title: JPA Specification
+title: JPA (2) - Specification
 status: Published
 date: '2020-04-01'
 featuredImage: >-

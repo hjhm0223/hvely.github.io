@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-title: JPA Query
+title: JPA (1) - Query
 status: Published
 date: '2020-04-01'
 featuredImage: >-

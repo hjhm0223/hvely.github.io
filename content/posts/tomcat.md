@@ -17,10 +17,10 @@ meta:
 ![tomcat](https://media.vlpt.us/images/hyunjae-lee/post/086f54ec-4bad-4ce5-a474-fecf121a94f0/tomcat-cover.png)
 
 
-"tomcat" 실행 (관리자 생성)
+`tomcat` 실행 (관리자 생성)
 1. http://tomcat.apache.org binary tar.gz 파일 다운로드
 2. tomcat 계정생성 (su 명령어 이용)
-3. tomcat 계정의 홈에 "tomcat" 디렉토리 생성
+3. tomcat 계정의 홈에 `tomcat` 디렉토리 생성
 sudo mkdir /home/tomcat
 sudo chown tomcat:tomcat /home/tomcat
 4. tomcat 디렉토리에 tomcat 설치

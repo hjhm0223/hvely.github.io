@@ -114,16 +114,16 @@ DELETE /members/1 (O)
 
 #### URI 설계 규칙
 - '/'(슬래시)는 계층 관계를 나타내는 데 사용
-```
-GET : /users/{userid}/devices
-```
+    ```
+    GET : /users/{userid}/devices
+    ```
 - 마지막에 '/'(슬래시)를 포함하지 않음
 - 가독성을 위해 '_'보다 '-'(하이픈)을 사용
 - 소문자 사용
 - 파일 확장자는 포함하지 않고, Accept header 사용
-```
-GET /members/soccer/345/photo HTTP/1.1 Host: restapi.example.com Accept: image/jpg
-```
+    ```
+    GET /members/soccer/345/photo HTTP/1.1 Host: restapi.example.com Accept: image/jpg
+    ```
 
 
 ## Request Methods    

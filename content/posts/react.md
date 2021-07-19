@@ -138,50 +138,50 @@ React.createElement('ul', /* ... ul children ... */)
 
 - 예제
 
-```html
-class JoinForm extends React.Component {
-  state = {
-  email: '',
-  password: '',
-}
-
-render() {
-  console.log('render')
-  const { email, password } = this.state
-  return (
-    <form onSubmit={this.handleSubmit}>
-    <input type="email" placeholder="이메일" value={email} onChange={this.handleChangeEmail}/>
-    <input type="password" placeholder="비밀번호" value={password} onChange={this.handleChangePassword}/>
-
-    <button type="submit">가입하기</button>
-    <button type="button" onClick={this.handleReset}>초기화</button>
-    </form>
-  );
-}
-
-handleChangeEmail = ({ target: { value } }) => {
-  this.setState({ email: value })
-}
-
-handleChangePassword = ({ target: { value } }) => {
-  this.setState({ password: value })
-}
-
-handleSubmit = () => {
-  console.log(this.state.email, this.state.password)
-}
-
-
-handleReset = () => {
-  this.setState({
+  ```html
+  class JoinForm extends React.Component {
+    state = {
     email: '',
     password: '',
-    })
   }
-}
 
-export default JoinForm
-```
+  render() {
+    console.log('render')
+    const { email, password } = this.state
+    return (
+      <form onSubmit={this.handleSubmit}>
+      <input type="email" placeholder="이메일" value={email} onChange={this.handleChangeEmail}/>
+      <input type="password" placeholder="비밀번호" value={password} onChange={this.handleChangePassword}/>
+
+      <button type="submit">가입하기</button>
+      <button type="button" onClick={this.handleReset}>초기화</button>
+      </form>
+    );
+  }
+
+  handleChangeEmail = ({ target: { value } }) => {
+    this.setState({ email: value })
+  }
+
+  handleChangePassword = ({ target: { value } }) => {
+    this.setState({ password: value })
+  }
+
+  handleSubmit = () => {
+    console.log(this.state.email, this.state.password)
+  }
+
+
+  handleReset = () => {
+    this.setState({
+      email: '',
+      password: '',
+      })
+    }
+  }
+
+  export default JoinForm
+  ```
 
 
 #### PureComponent
@@ -192,22 +192,22 @@ export default JoinForm
 
 - 예제
 
-```html
-import React from 'react'
+  ```html
+  import React from 'react'
 
-class Input extends React.PureComponent {
-  renderCount = 0;
+  class Input extends React.PureComponent {
+    renderCount = 0;
 
-  render() {
-    const { type, placeholder, value, onChange } = this.props
-    console.log(placeholder, 'Rendered', ++this.renderCount)
+    render() {
+      const { type, placeholder, value, onChange } = this.props
+      console.log(placeholder, 'Rendered', ++this.renderCount)
 
-    return <input type={type} placeholder={placeholder} value={value} onChange={onChange} />
+      return <input type={type} placeholder={placeholder} value={value} onChange={onChange} />
+    }
   }
-}
 
-export default Input
-```
+  export default Input
+  ```
 
 
 #### Props
@@ -220,46 +220,50 @@ export default Input
 하나의 컴포넌트가 가질 수 있는 `변경 가능한 데이터`로, 하위 컴포넌트에 상속이 가능하다. 컴포넌트를 렌더링할 때 새로운 데이터를 생성해야 하거나, 기존의 데이터를 참고해서 새로운 데이터르 만들어야 할 때 사용할 수 있다.
 
 
-##### State 예제
+- State 예제
+  - State 변수에 데이터를 담고, JSX에 변수를 넣을 때는 중괄호에 담아야 한다.
 
-- State 변수에 데이터를 담고, JSX에 변수를 넣을 때는 중괄호에 담아야 한다.
+    ```html
+    import React, { Component } from 'react';
 
-```html
-import React, { Component } from 'react';
+    class App extends Component {
+      state = {
+        hello: 'hello app js!'
+      };
 
-class App extends Component {
-  state = {
-    hello: 'hello app js!'
-  };
+      handleChange = () => {
+        this.setState({
+          hello: 'bye app js!'
+        });
+      };
 
-  handleChange = () => {
-    this.setState({
-      hello: 'bye app js!'
-    });
-  };
+      render() {
+        return (
+          <div className="App">
+          <div>{this.state.hello}</div>
+          <button onClick={this.handleChange}>click Me!</button>
+          </div>
+        );
+      }
+    }
 
-  render() {
-    return (
-      <div className="App">
-      <div>{this.state.hello}</div>
-      <button onClick={this.handleChange}>click Me!</button>
-      </div>
-    );
-  }
-}
-
-export default App;
-```
+    export default App;
+    ```
 
 
 ### References
 
-- tutorial: https://ko.reactjs.org/tutorial/tutorial.html#making-an-interactive-component
+- tutorial  
+https://ko.reactjs.org/tutorial/tutorial.html#making-an-interactive-component
 
-- JSX, Props, State: https://medium.com/wasd/%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0-%EB%B0%B0%EC%9A%B0%EB%8A%94-react-part-5-77e997cf597
+- JSX, Props, State  
+https://medium.com/wasd/%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0-%EB%B0%B0%EC%9A%B0%EB%8A%94-react-part-5-77e997cf597
 
-- Component / Pure Component: https://hyunseob.github.io/2019/06/02/react-component-the-right-way/
+- Component / Pure Component  
+https://hyunseob.github.io/2019/06/02/react-component-the-right-way/
 
-- 개념: React in Action, Mark Tielens Thomas, Jpub, 2017.
+- 개념  
+React in Action, Mark Tielens Thomas, Jpub, 2017.
 
-- 실습 코드: https://codesandbox.io
+- 실습 코드  
+https://codesandbox.io

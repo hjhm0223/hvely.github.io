@@ -20,14 +20,17 @@ meta:
 
  웹 어플리케이션 및 사이트들이 별도의 소프트웨어 없이 음성, 영상 미디어 혹은 텍스트, 파일 같은 데이터를 브라우저끼리 주고 받을 수 있게 만든 기술이다.
 
-- 가이드 및 공식 문서: https://webrtc.org/
-- 깃헙: https://github.com/googlecodelabs/webrtc-web
-- WebRTC를 사용하면 개방형 표준 위에서 작동하는 애플리케이션에 실시간 통신 기능을 추가 할 수 있다.
-- Peer 간에 전송되는 비디오, 음성 및 일반 데이터를 지원하므로 개발자는 강력한 음성 및 비디오 통신 솔루션을 구축 할 수 있다. 
-- 이 기술은 모든 최신 브라우저와 모든 주요 플랫폼의 기본 클라이언트에서 사용할 수 있다.
-- WebRTC 기반의 기술은 개방형 웹 표준으로 구현되며 모든 주요 브라우저에서 일반 **JavaScript API**로 사용할 수 있다.
-- Android 및 iOS 애플리케이션과 같은 기본 클라이언트의 경우 동일한 기능을 제공하는 라이브러리를 사용할 수 있다.
-- WebRTC 프로젝트는 [오픈 소스](https://webrtc.googlesource.com/src/) 이며 Apple, Google, Microsoft 및 Mozilla 등이 지원한다. 
+> - 가이드 및 공식 문서  
+  https://webrtc.org/
+> - github  
+  https://github.com/googlecodelabs/webrtc-web
+
+- WebRTC를 사용하면 개방형 표준 위에서 작동하는 애플리케이션에 실시간 통신 기능을 추가 할 수 있다.  
+- Peer 간에 전송되는 비디오, 음성 및 일반 데이터를 지원하므로 개발자는 강력한 음성 및 비디오 통신 솔루션을 구축 할 수 있다.  
+- 이 기술은 모든 최신 브라우저와 모든 주요 플랫폼의 기본 클라이언트에서 사용할 수 있다.  
+- WebRTC 기반의 기술은 개방형 웹 표준으로 구현되며 모든 주요 브라우저에서 일반 `JavaScript API`로 사용할 수 있다.  
+- Android 및 iOS 애플리케이션과 같은 기본 클라이언트의 경우 동일한 기능을 제공하는 라이브러리를 사용할 수 있다.  
+- WebRTC 프로젝트는 [오픈 소스](https://webrtc.googlesource.com/src/) 이며 Apple, Google, Microsoft 및 Mozilla 등이 지원한다.  
 
 
 
@@ -37,11 +40,11 @@ meta:
 
 - WebRTC에 크게 사용되는 3가지 클래스
 
-  - **MediaStream**: 카메라와 마이크 등의 데이터 스트림 접근
-  - **RTCPeerConnection**: 암호화 및 대역폭 관리 및 오디어, 비디오의 연결
-  - **RTCDataChannel**: 일반적인 데이터의 P2P 통신
+  - `MediaStream` : 카메라와 마이크 등의 데이터 스트림 접근
+  - `RTCPeerConnection` : 암호화 및 대역폭 관리 및 오디어, 비디오의 연결
+  - `RTCDataChannel` : 일반적인 데이터의 P2P 통신
 
-- 이 3가지의 객체를 통해서 데이터 교환이 이루어지며, RTCPeerConnection들이 적절하게 데이터를 교환할 수 있게 처리해주는 과정을 **시그널링(Signalling)**이라고 한다.
+- 이 3가지의 객체를 통해서 데이터 교환이 이루어지며, RTCPeerConnection들이 적절하게 데이터를 교환할 수 있게 처리해주는 과정을 `시그널링(Signalling)`이라고 한다.
 
 - 시그널링하는 과정
 
@@ -96,7 +99,7 @@ meta:
 
 - RTMP(Real Time Messaging Protocol)
 
-  - Adobe Systems의 독점 컴퓨터 통신 규약이다. 오디오, 비디오 및 기타 데이터를 인터넷을 ㅌㅇ해 스트리밍할 때 쓰인다. Adobe Flash Player와 서버 사이의 통신에 이용한다.
+  - Adobe Systems의 독점 컴퓨터 통신 규약이다. 오디오, 비디오 및 기타 데이터를 인터넷을 통해 스트리밍할 때 쓰인다. Adobe Flash Player와 서버 사이의 통신에 이용한다.
 
 
 
@@ -105,7 +108,7 @@ meta:
 #### WebRTC API
 
 - 카메라와 마이크를 위해 navigator.mediaDevices.getUserMedia()를 사용하여 MediaStreams를 캡처한다. 화면 녹화의 경우 navigator.mediaDevices.getDisplayMedia()를 대신 사용한다.
-- peer to peer 연결은 **RTCPeerConnection 인터페이스**에서 처리된다. 이 인터페이스는 WebRTC에서 두 peer 간 연결을 설정하고 제어하는 중심 역할이다.
+- peer to peer 연결은 `RTCPeerConnection 인터페이스`에서 처리된다. 이 인터페이스는 WebRTC에서 두 peer 간 연결을 설정하고 제어하는 중심 역할이다.
 
 
 
@@ -137,11 +140,8 @@ implementation 'org.webrtc:google-webrtc:1.0.+' // 버전 맞추기
 
 ## References
 
-- WebRTC
-
+- WebRTC  
   https://www.html5rocks.com/en/tutorials/webrtc/basics/
-
-- WebRTC 개념 및 참고 용어
-
+- WebRTC 개념 및 참고 용어  
   https://medium.com/@hyun.sang/webrtc-webrtc%EB%9E%80-43df68cbe511
 
