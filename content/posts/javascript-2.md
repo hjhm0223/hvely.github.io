@@ -2,7 +2,7 @@
 template: SinglePost
 title: JavaScript (2) - 문법과 자료형 
 status: Published
-date: '2020-04-01'
+date: '2021-07-29'
 featuredImage: >-
   https://gawoori.net/wp-content/uploads/2018/04/javascript-frameworks.jpg
 excerpt: >-
