@@ -113,3 +113,105 @@ $ git tag -a 1.1 -m "hotfix-some" master
 $ git checkout develop
 $ git merge hotfix-some
 ```
+
+## commit rules
+### 커밋 메시지 구조
+
+```html
+<type>(<scope>): <subject>			-- 헤더
+<BLANK LINE>										-- 빈줄
+<body>													-- 본문
+<BLANK LINE>										-- 빈줄
+<footer>												-- 바닥글
+```
+
+
+
+#### 커밋 메시지 구조 상세
+
+##### ```<type>```
+
+| 종류     | 설명                                                         |
+| -------- | ------------------------------------------------------------ |
+| 신규     | 새로운 기능에 대한 커밋                                      |
+| 수정     | 버그 수정에 대한 커밋                                        |
+| 빌드     | 빌드 관련 파일 수정에 대한 커밋                              |
+| 기타     | 그 외 수정사항에 대한 커밋                                   |
+| 설정     | CI (Code Integration) 설정 수정에 대한 커밋 (Docker, Jenkins 등) |
+| 문서     | 문서 수정에 대한 커밋                                        |
+| 스타일   | 코드 스타일 또는 포맷 등에 관한 커밋 (CSS, Image 등)         |
+| 리팩토링 | 코드 리팩토링에 대한 커밋                                    |
+| 테스트   | 테스트 코드 수정에 대한 커밋                                 |
+
+
+
+##### ```<scope>``` 수정범위
+
+- 단일 파일 수정 시 단일 파일만 기입
+- 단일 패키지 내에서 수정 시 패키지 기입
+- 여러 파일, 여러 패키지 수정 시 대표 파일 및 ... 표시로 표기 후 본문에 추가
+  - 수정 (robot.map.js, ...)
+  - 본문에 나머지 파일 추가
+
+
+
+##### ```<subject>```
+
+- 수정한 내용을 50글자 이내로 요약 작성
+
+
+
+##### ```<body>```
+
+- 본문으로 헤더에 표현하지 않은 상세한 내용 기입
+- 본문의 각 행은 72자를 넘기지 않음
+- How보다는 What & Why 를 위주로 작성
+
+
+
+##### ```<footer>```
+
+- ```close #1233``` 과 같이 특정 이슈 트래킹, 이슈 클로징 등의 사항 추가 (선택사항)
+
+
+
+#### 예시
+
+- 예시 1
+
+  ```
+  수정(map.api.js): 대시보드 화면 멀티맵 띄울 시 화면 틀어지는 사항 수정
+  
+  Before
+  대시보드에서 멀티맵 (2개 이상) 띄울 시 화면 비율이 맞지 않는 현상
+  
+  After
+  최대 4개까지 멀티맵 화면 비율 정상
+  
+  Issue #32 Closed.
+  ```
+
+- 예시 2
+
+  ```
+  신규(RobotService.java, ...): 신규 B 로봇사 수용을 위한 로봇서비스 파트 수정
+  
+  B 로봇사 수용을 위한 서비스 내 각종 비즈니스 로직 수정
+  1. iot Makers API 연동 분기 적용
+  2. B사 수용을 위해 변경된 rm_robot api 분기 적용
+  3. B사 로봇 특수 동작을 위한 AAA 메서드 적용
+  
+  수정파일 목록
+  AAAService.java
+  BBBService.java
+  CCCService.java
+  DDD.js
+  main.css
+  
+  (footer 생략)
+  ```
+
+### References
+
+- https://beomseok95.tistory.com/328
+- https://github.com/angular/nagular/commits/master

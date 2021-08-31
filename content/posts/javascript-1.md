@@ -19,6 +19,8 @@ meta:
 
 # JavaScript (1) - 개요 
 
+
+
 - 배경지식
   - Internet, WWW(World Wide Web)에 대한 전반적인 이해
   - HTML(Hyper Text Markup Language)에 대한 실무 지식
@@ -72,6 +74,7 @@ meta:
 ​	JavaScript는 JavaScript에 기반한 표준화된 국제 프로그래밍 언어를 제공하기 위해 [ECMA(European association for standardizing information and communication systems) International](https://www.ecma-international.org/) 에서 표준화 된다.
 
 
+
 ## JavaScript 시작하기
 
 ### Web Console 와 Scratchpad
@@ -99,4 +102,11 @@ meta:
   >  1. 성능을 크게 개선한다.
   >  2. 초보자가 실수하게 만드는 JavaScript의 일부 시멘틱을 막는다.
   >  3. 콘솔에서 실행되는 코드 스니펫이 서로 상호작용하지 못하도록 한다. (한 콘솔 실행에서 생성된 내용을 다른 콘솔 실행에 사용하는 경우)
+
+
+
+## References
+
+- [MDN - JavaScript 안내서](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide)
+- [MDN - JavaScript 참고서](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference)
 

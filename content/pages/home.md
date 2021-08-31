@@ -1,15 +1,15 @@
 ---
 template: HomePage
 slug: ''
-title: Hyunjee Blog
+title: Hyunjee's Blog
 featuredImage: '/images/sahara.jpeg'
 subtitle: 'Welcome!'
 meta:
   description: This is a meta description.
-  title: Hyunjee Blog
+  title: Hyunjee's Blog
 ---
 
-Hyunjee's Blog
+React로 만드는 스터디 블로그
 ### Features
 
 - **[Gatsby](https://gatsbyjs.org)** static site generator

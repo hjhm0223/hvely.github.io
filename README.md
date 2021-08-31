@@ -1,7 +1,30 @@
-# Yellowcake
+# Hyunjee's Blog
 
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![dependencies](https://img.shields.io/david/thriveweb/yellowcake)](https://img.shields.io/david/thriveweb/yellowcake)
+
+## local에서 개발하기 
+### local 웹 띄우기
+
+```
+yarn develop
+```
+
+### 변경사항 반영
+
+```
+git add . 
+git commit -m "message"
+git push origin develop
+```
+
+### 배포
+
+```
+yarn deploy
+```
+
+
 
 An opinionated starter project for creating lightning-fast websites with [Gatsby](https://gatsbyjs.org) v2 and [Netlify CMS](https://netlifycms.org) v2. Made by [Thrive Web Design on the Gold Coast, Australia](https://thriveweb.com.au)
 

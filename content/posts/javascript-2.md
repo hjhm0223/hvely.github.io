@@ -19,7 +19,10 @@ meta:
 
 # JavaScript (2) - 문법과 자료형 
 
-JavaScript는 문법의 대부분을 Java와 C, C++로부터 차용하고 있으며, Awk, Perl, Python의 영향도 받았다.  
+
+## 문법과 자료형
+
+​	JavaScript는 문법의 대부분을 Java와 C, C++로부터 차용하고 있으며, Awk, Perl, Python의 영향도 받았다.  
 
 - JavaScript는 **대소문자를 구별**하며 **유니코드** 문자셋을 이용한다.  
 - JavaScript에서는 명령을 Statement 라고 부르며, 세미콜론(`;`)으로 구분한다.
@@ -320,4 +323,11 @@ JavaScript는 문법의 대부분을 Java와 C, C++로부터 차용하고 있으
 #### 문자 이스케이프
 
 - 표에 없는 문자의 경우 백슬래시는 무시되지만, 이 용법은 더 이상 사용되지 않으며 사용을 피해야 한다.
+
+
+
+## References
+
+- [MDN - JavaScript 안내서](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide)
+- [MDN - JavaScript 참고서](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference)
 

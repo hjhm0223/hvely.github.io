@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-title: JavaScript (3) - 제어흐름과 에러처리  
+title: JavaScript (3) - 제어흐름과 에러처리, Loop, 함수, 표현식과 연산자, 숫자와 날짜, 텍스트 서식, 정규 표현식
 status: Published
 date: '2021-07-29'
 featuredImage: >-
@@ -18,10 +18,6 @@ meta:
 
 
 # JavaScript (3) - 제어흐름과 에러처리 
-
-
-
-## 제어 흐름과 에러 처리
 
 ​	JavaScript는 어플리케이션 상의 상호작용을 통합하는데 사용할 수 있는 일련의 문법, 특히 제어흐름 문을 지원한다.  
 
@@ -54,7 +50,7 @@ meta:
   > ```javascript
   > var x = 1;
   > {
-  >   var x = 2;
+  > var x = 2;
   > }
   > console.log(x); // outputs 2
   > ```
@@ -91,14 +87,14 @@ meta:
      > ```javascript
      > // Create an object type UserException
      > function UserException (message){
-     >   this.message=message;
-     >   this.name="UserException";
+     > this.message=message;
+     > this.name="UserException";
      > }
      > 
      > // Make the exception convert to a pretty string when used as a string
      > // (e.g. by the error console)
      > UserException.prototype.toString = function () {
-     >   return this.name + ': "' + this.message + '"';
+     > return this.name + ': "' + this.message + '"';
      > }
      > 
      > // Create an instance of the object type and throw it
@@ -111,7 +107,7 @@ meta:
 
    - `try...catch` 문법은 시도할 블록을 표시하고, 예외가 발생하였을 때 하나 이상의 반응을 명시한다. 만약 예외가 발생하였을때, `try...catch` 문법은 예외를 잡아낸다.
 
-   -  `try` 블록이 성공하지 않았다면, 제어는 즉시 `catch` 블록으로 이동한다. 만약 `try` 블록에서 예외가 발생하지 않았을 때, `catch` 블록을 건너뛴다.
+   - `try` 블록이 성공하지 않았다면, 제어는 즉시 `catch` 블록으로 이동한다. 만약 `try` 블록에서 예외가 발생하지 않았을 때, `catch` 블록을 건너뛴다.
 
    - 예시: 함수에 전해진 값을 토대로 달의 이름을 검색하는 함수를 호출한다. 만약 값이 달 숫자값(1-12) 에 일치하지 않으면,`"InvalidMonthNo"` 라는 값과 함께 예외가 발생하고 `catch` 블록의 문장들이 `monthName` 변수를 `unknown` 값으로 설정한다.
 
@@ -144,7 +140,7 @@ meta:
 
      - `finally` 블록은 `try` 블록과 `catch` 블록이 시행되고, `try...catch` 문법 다음 문장이 시행되기 전에 시행되는 문장들을 포함하고 있다.
 
-     -  `finally` 블록은 예외가 발생하든 안하든 수행된다.
+     - `finally` 블록은 예외가 발생하든 안하든 수행된다.
 
      - `finally` 블록을 예외가 발생하였을때 스크립트가 우아하게 실패하도록 만들기 위하여 사용할 수 있다. 
 
@@ -253,3 +249,8 @@ meta:
 
   >  [`Promise`](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise) 참고 페이지
 
+
+## References
+
+- [MDN - JavaScript 안내서](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide)
+- [MDN - JavaScript 참고서](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference)
