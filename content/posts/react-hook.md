@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-title: React
+title: React Hook
 status: Published
 date: '2020-04-01'
 featuredImage: >-
