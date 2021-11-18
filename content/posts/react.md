@@ -22,7 +22,7 @@ meta:
 
 
 
-## React
+# React
 
   사용자 인터페이스를 개발하기 위한 라이브러리이며, 컴포넌트에 기초한 간결하면서도 유연한 API를 제공한다. 컴포넌트는 리액트의 기본 단위이며 리액트 애플리케이션 내에서 폭넓게 활용된다. 리액트는 개발자가 작성한 프로그램과 실제 브라우저 DOM 사이에서 이 둘을 연결해주는 가상 DOM을 구현한다. 데이터 모델링, HTTP 호출, 스타일 조정 및 기타 프런트엔드 애플리케이션이 필요로 하는 여러 기능을 지원하지 않는다. 따라서 필요에 따라 다양한 코드, 모듈 혹은 도구들을 자유롭게 선택하여 사용할 수 있다.
 
@@ -41,7 +41,7 @@ meta:
 
 
 
-### 장점
+## 장점
 
 1. JSX 문법
   - JavaScript 안에서 HTML문을 사용해서 view를 구성할 수 있게 해주는 JavaScript 문법.
@@ -86,7 +86,7 @@ React.createElement('ul', /* ... ul children ... */)
 
 
 
-### 가상 DOM
+## 가상 DOM
 
   데이터가 변경될 때 변경 사항을 반영하기 위해 UI를 갱신하는 과정을 효과적이면서도 쉽게 처리할 수 있다. 굉장히 빠른 변경 탐지 알고리즘을 이용해 실제 DOM을 효과적으로 갱신한다. 가상 DOM은 뛰어난 성능을 발휘하지만, 그보다 더 중요한 것은 정적인 멘탈 모델을 제공한다는 점이다.
 
@@ -99,7 +99,7 @@ React.createElement('ul', /* ... ul children ... */)
 
 
 
-### Component
+## Component
 
   기능을 단위별로 캡슐화하는 리액트의 기본 단위. 사용자가 보는 뷰는 이 컴포넌트들을 조합하여 만든다. 컴포넌트는 기본적으로 자바스크립트 함수 혹은 클래스로, 속성들을 입력으로 받아들이며 내부적으로 각자의 상태를 관리한다. 리액트는 특정 형식의 컴포넌트에 대해서는 생명주기 메서드를 제공하기 때문에 컴포넌트 관리 단계 중 필요한 곳에 임의의 기능을 추가할 수 있다.
 
@@ -184,7 +184,7 @@ React.createElement('ul', /* ... ul children ... */)
   ```
 
 
-#### PureComponent
+### PureComponent
 
 - 렌더링 Performance를 Optimize한 것으로, Props나 State를 얕은 비교해서 변경점이 없으면 render를 다시 실행하지 않는다.
 
@@ -210,12 +210,12 @@ React.createElement('ul', /* ... ul children ... */)
   ```
 
 
-#### Props
+### Props
 
 컴포넌트 내에서 변경이 불가능하고, 하위 컴포넌트에 상속이 가능하다.
 
 
-#### State
+### State
 
 하나의 컴포넌트가 가질 수 있는 `변경 가능한 데이터`로, 하위 컴포넌트에 상속이 가능하다. 컴포넌트를 렌더링할 때 새로운 데이터를 생성해야 하거나, 기존의 데이터를 참고해서 새로운 데이터르 만들어야 할 때 사용할 수 있다.
 
@@ -251,7 +251,60 @@ React.createElement('ul', /* ... ul children ... */)
     ```
 
 
-### References
+
+## React 시작하기
+
+0. Requirement
+- Node 설치: https://nodejs.org/en/
+  ```
+  node -v
+  
+  npm -v
+  ```
+- NPX 설치
+  ```
+  npm install npx -g
+  
+  npm install -g npm
+  ```
+- Visual Studio 설치
+
+- Git 설치: https://git-scm.com/
+
+
+### 1. create-react-app 설치
+- https://github.com/facebook/create-react-app
+
+  ```
+  npx create-react-app {folder-name}
+
+  cd {folder-name}
+
+  npm start
+  ```
+- Git Repository 생성 
+  ```
+  git init
+
+  git remote add origin {url}
+
+  git add .
+
+  git commit -m "msg"
+
+  git push origin master
+  ```
+
+### 2. index.js, index.html, app.js 외 불필요한 코드 삭제
+
+ 
+
+
+
+
+
+
+## References
 
 - tutorial  
 https://ko.reactjs.org/tutorial/tutorial.html#making-an-interactive-component
