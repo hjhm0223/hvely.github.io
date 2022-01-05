@@ -8,7 +8,7 @@ featuredImage: >-
 excerpt: >-
   
 categories:
-  - category: DB
+  - category: DataBase
 meta:
   description: test meta description
   title: test meta title

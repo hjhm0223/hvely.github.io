@@ -1,6 +1,6 @@
 ---
 template: BlogIndex
-title: DB
+title: DataBase
 subtitle: ''
 featuredImage: '/images/venice.jpeg'
   
