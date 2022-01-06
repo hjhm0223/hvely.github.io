@@ -2,7 +2,7 @@
 template: HomePage
 slug: ''
 title: Hyunjee's Blog
-featuredImage: '/images/sahara.jpeg'
+featuredImage: '../../images/sky.jpeg'
 subtitle: 'Welcome!'
 meta:
   description: This is a meta description.

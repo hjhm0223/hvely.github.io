@@ -2,7 +2,7 @@
 template: BlogIndex
 title: JavaScript
 subtitle: ''
-featuredImage: >-
+featuredImage: '../../images/london.jpeg'
   
 ---
 

@@ -1,8 +1,8 @@
 ---
 template: BlogIndex
-title: Data Mining
+title: DataMining
 subtitle: ''
-featuredImage: >-
+featuredImage: '../../images/london.jpeg'
   
 ---
 

@@ -2,7 +2,7 @@
 template: BlogIndex
 title: Project
 subtitle: ''
-featuredImage: >-
+featuredImage: '../../images/london.jpeg'
   
 ---
 

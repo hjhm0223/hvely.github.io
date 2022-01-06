@@ -2,7 +2,7 @@
 template: BlogIndex
 title: Spring
 subtitle: ''
-featuredImage: >-
+featuredImage: '../../images/london.jpeg'
   
 ---
 

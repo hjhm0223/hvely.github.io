@@ -2,7 +2,7 @@
 template: BlogIndex
 title: DataBase
 subtitle: ''
-featuredImage: '/images/venice.jpeg'
+featuredImage: '../../images/london.jpeg'
   
 ---
 

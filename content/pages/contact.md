@@ -2,7 +2,7 @@
 template: ContactPage
 slug: contact
 title: Contact Page
-featuredImage: '/images/praha.jpeg'
+featuredImage: '../../images/praha.jpeg'
 subtitle: This is the contact page subtitle.
 address: ''
 phone: +8210-9777-3197

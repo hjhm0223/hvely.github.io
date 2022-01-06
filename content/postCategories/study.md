@@ -2,7 +2,7 @@
 template: BlogIndex
 title: Study
 subtitle: ''
-featuredImage: >-
+featuredImage: '../../images/london.jpeg'
   
 ---
 
